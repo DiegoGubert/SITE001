@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Contato</title>
+    <style>
+        @charset "UTF-8";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: 'Barlow', sans-serif;
+  background: radial-gradient(circle at top, #0a0f1f, #05070d);
+  color: #fff;
+  min-height: 100vh;
+}
+
+
+.logo img {
+  width: 70px;
+  margin: 20px;
+}
+
+
+.contato-container {
+  max-width: 700px;
+  margin: 80px auto;
+  padding: 50px;
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 40px rgba(0,0,0,0.8);
+  border: 1px solid rgba(255,255,255,0.05);
+  text-align: center;
+}
+
+
+.contato-container h1 {
+  font-size: 42px;
+  margin-bottom: 20px;
+  font-family: 'Rajdhani', sans-serif;
+  letter-spacing: 4px;
+}
+
+
+.contato-container h1::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 4px;
+  margin: 10px auto;
+  background: linear-gradient(90deg, #f5a623, transparent);
+  border-radius: 5px;
+}
+
+.voltar {
+  display: inline-block;
+  margin-bottom: 30px;
+  color: #4da6ff;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.voltar:hover {
+  color: #f5a623;
+}
+
+
+.contato-item {
+  background: rgba(255,255,255,0.04);
+  margin: 15px 0;
+  padding: 15px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.contato-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0 15px rgba(255,255,255,0.1);
+}
+
+
+.contato-item span {
+  color: #aaa;
+  font-size: 14px;
+}
+
+
+.contato-item a {
+  display: block;
+  margin-top: 5px;
+  font-size: 18px;
+  color: #4da6ff;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.contato-item a:hover {
+  color: #f5a623;
+}
+
+
+.btn-whatsapp {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 14px 30px;
+  background: linear-gradient(45deg, #25D366, #1ebe5d);
+  color: #000;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn-whatsapp:hover {
+  transform: scale(1.08);
+  box-shadow: 0 0 20px #25D366;
+}
+
+
+.contato-container {
+  animation: aparecer 0.8s ease;
+}
+
+@keyframes aparecer {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+@media (max-width: 600px) {
+  .contato-container {
+    margin: 40px 20px;
+    padding: 30px;
+  }
+
+  .contato-container h1 {
+    font-size: 30px;
+  }
+}
+    </style>
+
+    
+    
+</head>
+<body>
+     <div class="contato-container">
+
+  <h1>Contato</h1>
+
+  <a href="index.html" class="voltar">← Voltar para o início</a>
+
+  <div class="contato-item">
+    <span>Email</span>
+    <a href="mailto:diego.rsom@gmail.com">diego.rsom@gmail.com</a>
+  </div>
+
+  <div class="contato-item">
+    <span>WhatsApp</span>
+    <a href="https://wa.me/556592138005">Fale comigo</a>
+  </div>
+
+  <a href="https://wa.me/556592138005?text=Olá vim pelo seu site"
+     class="btn-whatsapp">
+     Chamar no WhatsApp
+  </a>
+
+</div>
+
+</body>
+</html>
